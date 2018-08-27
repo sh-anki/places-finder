@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #eee;
+  text-align: center;
+  padding: 5%;
+}
+
+.tableCell {
+  cursor: pointer;
+}
+
+.newcell {
+  cursor: pointer;
+  background-color: green;
+}
+
+.add-button {
+  margin-left: 5px;
+}
+
+.table-input {
+  width: 90%;
+}
+
+.table > thead > tr {
+  background-color: rgb(198, 223, 255);
+}
+
+.form-inline {
+  margin-bottom: 22px;
+}
+
+.form-group {
+  margin-right: 11px;
+}
+
+.th-cat {
+  font-size: 0.65em;
+}
+
+@keyframes win-win {
+  0% {
+    background-color: rgb(50, 5, 133);
+    color: #eee;
+  }
+  100% {
+    background-color: #eee;
+    color: rgb(50, 5, 133);
+  }
+}
+
+.winner {
+  animation: win-win 0.5s infinite alternate;
+}
