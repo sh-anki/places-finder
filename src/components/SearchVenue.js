@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+
+import { connect } from "react-redux";
+import { setVenues } from "../actions";
 import { client_id, client_secret } from "../Keys/Keys";
 
 import { Form, FormGroup, FormControl, Button } from "react-bootstrap";
@@ -59,4 +62,7 @@ class SearchVenue extends Component {
   }
 }
 
-export default SearchVenue;
+export default connect(
+  null,
+  { setVenues }
+)(SearchVenue);
