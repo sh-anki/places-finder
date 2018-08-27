@@ -29,7 +29,6 @@ class VenueList extends Component {
   };
 
   addParticipant() {
-    console.log("PARTICIPANT PROPS: ", this.props);
     this.setState(({ participants }) => ({
       participants: participants.concat({ name: "", votes: [] })
     }));
@@ -37,7 +36,6 @@ class VenueList extends Component {
 
   mostVoted() {
     const { participants } = this.state;
-
     const calculateMostFrequent = participants.reduce(
       function(o, { votes: { venue: s } }) {
         o.freq[s] = (o.freq[s] || 0) + 1;
@@ -53,7 +51,6 @@ class VenueList extends Component {
 
   checkEven() {
     const { frequent } = this.state;
-    //const pullVotes = participants.map(p => p.votes.value);
     const obj = frequent.freq;
     const keys = Object.keys(obj);
     const largest = Math.max.apply(null, keys.map(x => obj[x]));

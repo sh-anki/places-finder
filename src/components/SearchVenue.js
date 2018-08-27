@@ -29,14 +29,12 @@ class SearchVenue extends Component {
       near: this.state.location
     };
 
-    console.log(url);
     fetch(url + new URLSearchParams(params), {
       method: "GET"
     })
       .then(response => response.json())
       .then(json => this.props.setVenues(json.response.group.results))
       .catch(error => console.log("Failed: ", error));
-    console.log("mapping", this.store);
   }
 
   onChangeLocation(value) {
