@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { client_id, client_secret } from "../Keys/Keys";
 
 import { Form, FormGroup, FormControl, Button } from "react-bootstrap";
 
@@ -13,8 +14,6 @@ class SearchVenue extends Component {
 
   getVenueList(evt) {
     evt.preventDefault();
-    const client_id = "T5CWZIKCV0CCSDUVJVREOXS0ERKLR0FPWOR0HXJJCWF0IS5N";
-    const client_secret = "2VMV3YL0G5T0SNCRCLSU5TMSNUYA20WYZOMPEWD5MKJ54JIA";
     const url = "https://api.foursquare.com/v2/search/recommendations?";
 
     const params = {

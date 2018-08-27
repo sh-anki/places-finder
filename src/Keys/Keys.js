@@ -1,0 +1,4 @@
+const client_id = "T5CWZIKCV0CCSDUVJVREOXS0ERKLR0FPWOR0HXJJCWF0IS5N";
+const client_secret = "2VMV3YL0G5T0SNCRCLSU5TMSNUYA20WYZOMPEWD5MKJ54JIA";
+
+export { client_id, client_secret };
